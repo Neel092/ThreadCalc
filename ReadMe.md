@@ -1,13 +1,13 @@
-# 🧮 ThreadCalc (C)
+#  ThreadCalc (C)
 
-## 🚀 Overview
+## Overview
 
 A modular client-server calculator built in C using socket programming.  
 Now supports **concurrent multi-client handling** using a **Thread-per-Client model**, allowing multiple users to interact with the server simultaneously.
 
 ---
 
-## 🧠 Features
+##  Features
 
 - TCP-based Client-Server communication  
 - 🧵 Thread-per-Client concurrency model  
@@ -19,15 +19,15 @@ Now supports **concurrent multi-client handling** using a **Thread-per-Client mo
 
 ---
 
-## 🧵 Thread-per-Client Architecture
+##  Thread-per-Client Architecture
 
-### 🧠 Idea
+###  Idea
 Each client connection is handled in a **separate thread**, enabling parallel communication.
 
 
 ---
 
-### ⚙️ How It Works
+###  How It Works
 
 **Main Thread:**
 - Accepts incoming client connections  
@@ -40,7 +40,7 @@ Each client connection is handled in a **separate thread**, enabling parallel co
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * C (System Programming)
 * POSIX Sockets (Networking)
@@ -48,7 +48,7 @@ Each client connection is handled in a **separate thread**, enabling parallel co
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -60,7 +60,7 @@ include/
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### Compile:
 
@@ -100,7 +100,7 @@ gcc src/Core/*.c src/io/*.c src/Network/*.c src/Main.c -Iinclude -o app
 
 ---
 
-## 📌 Learnings
+##  Learnings
 
 - Socket programming (TCP lifecycle)  
 - Multithreading with POSIX Threads  
@@ -110,7 +110,7 @@ gcc src/Core/*.c src/io/*.c src/Network/*.c src/Main.c -Iinclude -o app
 
 ---
 
-## 🔥 Future Improvements
+##  Future Improvements
 
 - Thread Pool implementation (scalable alternative)  
 - Event-driven model using `select()` / `epoll()`  
